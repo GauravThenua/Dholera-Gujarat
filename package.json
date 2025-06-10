@@ -1,5 +1,5 @@
 {
-  "name": "dholera-clone",
+  "name": "dholeragujarat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
     "framer-motion": "^12.15.0",
     "keen-slider": "^6.8.6",
     "lucide-react": "^0.511.0",

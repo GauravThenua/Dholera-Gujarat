@@ -1,4 +1,4 @@
-"use client"; // if you're using Next.js 13+
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -29,25 +29,19 @@ const MainSection = () => {
   ];
 
   return (
-    <main className="relative bg-gradient-to-br from-[#d0f0f6] via-[#c5e2eb] to-[#a2e0db] py-10 px-6 overflow-hidden">
+    <main className="relative bg-gradient-to-br from-[#d0f0f6] via-[#c5e2eb] to-[#a2e0db] py-10 px-6 overflow-hidden transition-colors duration-700 ease-in-out">
       <div className="max-w-7xl mx-auto text-center">
         {/* Hero Heading */}
-        <h1
-          className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 tracking-tight leading-tight"
-          style={{
-            textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
-            fontDisplay: "swap",
-          }}
-        >
+        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 tracking-tight leading-tight transition-all duration-700 ease-in-out">
           Welcome to Dholera Smart City
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg md:text-xl text-[#1a535c] max-w-3xl mx-auto leading-relaxed mb-12">
+        <p className="text-lg md:text-xl text-[#1a535c] max-w-3xl mx-auto leading-relaxed mb-12 transition-all duration-700 ease-in-out">
           Discover{" "}
-          <span className="font-semibold text-[#ff8800]">
+          <strong className="font-semibold text-[#ff8800]">
             India’s first greenfield smart city
-          </span>
+          </strong>
           , built for innovation, sustainability, and unmatched urban living.
           Dholera is transforming Gujarat’s landscape with{" "}
           <span className="text-[#dd4c00] font-medium">
@@ -56,50 +50,49 @@ const MainSection = () => {
           .
         </p>
 
-        {/* Features */}
+        {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-10 mb-16">
           {features.map((card, idx) => (
             <div
               key={idx}
-              className={`rounded-3xl overflow-hidden transform transition-transform hover:scale-105 shadow-xl bg-gradient-to-br ${card.color} text-white`}
+              className={`rounded-3xl overflow-hidden transform transition-transform duration-700 ease-in-out hover:scale-105 shadow-xl bg-gradient-to-br ${card.color} text-white`}
             >
-              <div className="relative h-48 w-full">
+              <div className="relative w-full h-48">
                 <Image
                   src={card.img}
                   alt={card.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
+                  className="object-cover transition-all duration-700 ease-in-out"
                   priority={idx === 0}
                 />
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-bold mb-3">{card.title}</h2>
-                <p className="text-sm opacity-90">{card.text}</p>
+                <h2 className="text-2xl font-bold mb-3 transition-all duration-700 ease-in-out">{card.title}</h2>
+                <p className="text-sm opacity-90 transition-all duration-700 ease-in-out">{card.text}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Optimized Featured Hero Image */}
-        <div className="relative group rounded-3xl overflow-hidden max-w-5xl mx-auto shadow-2xl hover:shadow-3xl transition-all duration-500">
+        {/* Hero Image */}
+        <div className="relative rounded-3xl overflow-hidden max-w-5xl mx-auto shadow-2xl transition-transform duration-700 ease-in-out hover:scale-105">
           <Image
             src="/images/dholera_cityscape.webp"
             alt="Aerial view of Dholera Smart City"
             width={1600}
             height={600}
             sizes="100vw"
-            className="rounded-3xl w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+            className="rounded-3xl w-full h-auto object-cover transition-all duration-700 ease-in-out"
             priority
           />
 
-          {/* Overlay */}
-          <div className="absolute inset-0  bg-opacity-40 flex items-end justify-start p-6 md:p-10 transition-opacity duration-500">
+          <div className="absolute inset-0 bg-opacity-30 flex items-end justify-start p-6 md:p-10 transition-all duration-700 ease-in-out">
             <div className="text-left">
-              <h2 className="text-white text-2xl md:text-3xl font-bold drop-shadow-lg">
+              <h2 className="text-white text-2xl md:text-3xl font-bold transition-all duration-700 ease-in-out">
                 Vision of Tomorrow, Today
               </h2>
-              <p className="text-white text-sm md:text-base mt-2 opacity-90">
+              <p className="text-white text-sm md:text-base mt-2 opacity-90 transition-all duration-700 ease-in-out">
                 Dholera is more than a city — it’s a smart ecosystem.
               </p>
             </div>

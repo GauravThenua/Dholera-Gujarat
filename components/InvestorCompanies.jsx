@@ -106,7 +106,7 @@ const InvestorCompanies = () => {
 
   return (
     <section className="bg-white py-12 px-4 md:px-16">
-      <Head>
+      {/* <Head>
         <title>Dholera Investment Companies | Top Investors in Smart City</title>
         <meta
           name="description"
@@ -123,7 +123,7 @@ const InvestorCompanies = () => {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-      </Head>
+      </Head> */}
 
       <motion.h1
         initial={{ opacity: 0, y: 20 }}

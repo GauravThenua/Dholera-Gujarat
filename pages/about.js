@@ -11,12 +11,13 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Dholera Gujarat</title>
+        <title>About DholeraGujarat.in</title>
         <meta
           name="description"
           content="Explore Dholera Smart City and discover why DholeraGujarat.in is your most trusted destination for investments, insights, and updates."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <icon href="/images/dholera_gujarat_logo.ico" />
       </Head>
       <Navbar />
       <main className="min-h-screen bg-gradient-to-b from-indigo-100 via-purple-100 to-white text-gray-900">
@@ -28,8 +29,8 @@ export default function About() {
             fill
             className="object-cover"
             priority
-            placeholder="blur"
-            blurDataURL="/images/dholera-banner-blur.jpg"
+            // placeholder="blur"
+            // blurDataURL="/images/dholera-banner-blur.jpg"
           />
           <div className="absolute inset-0 flex items-center justify-center text-center backdrop-blur bg-black/30 p-6 rounded-xl">
             <div>

@@ -3,12 +3,12 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-import { useUser } from '@/context/UserContext';
-import AuthModal from '@/components/AuthModal';
+// import { useUser } from '@/context/UserContext';  // Commented out since login is removed
+// import AuthModal from '@/components/AuthModal';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { userName, logout, openModal, showModal, closeModal } = useUser();
+  // const { userName, logout, openModal, showModal, closeModal } = useUser();
 
   return (
     <>
@@ -66,6 +66,9 @@ export default function Navbar() {
             >
               Contact
             </Link>
+
+            {/* Login/logout section commented out for SEO and performance */}
+            {/*
             {userName ? (
               <>
                 <span className="text-white-300 hover:cursor-pointer hover:text-yellow-400">Hi, {userName}</span>
@@ -84,6 +87,7 @@ export default function Navbar() {
                 Login
               </button>
             )}
+            */}
           </div>
         </div>
 
@@ -118,6 +122,9 @@ export default function Navbar() {
             >
               Contact
             </Link>
+
+            {/* Login button on mobile commented out */}
+            {/*
             {userName ? (
               <span className="text-shadow-white font-semibold">
                 Hi, {userName}
@@ -133,12 +140,13 @@ export default function Navbar() {
                 Login
               </button>
             )}
+            */}
           </div>
         )}
       </nav>
 
-      {/* Render modal globally inside Navbar */}
-      {showModal && <AuthModal onClose={closeModal} />}
+      {/* Modal rendering commented out */}
+      {/* {showModal && <AuthModal onClose={closeModal} />} */}
     </>
   );
 }

@@ -69,9 +69,10 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact Us - Dholera Smart City</title>
-        <meta name="description" content="Get in touch with us for any inquiries or support regarding Dholera Smart City." />
+        <title>Contact Us - DholeraGujarat.in</title>
+        <meta name="description" content="Get in touch with us for any inquiries or investment regarding Dholera Smart City." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
       </Head>
       <Navbar />
       <section className="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] py-20 px-4">
