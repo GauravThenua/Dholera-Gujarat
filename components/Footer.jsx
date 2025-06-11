@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => (
-  <footer className="bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#73dab7] text-white py-20 relative font-[Montserrat] overflow-hidden">
+  <footer className="bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#73dab7] text-white py-15 relative font-[Montserrat] overflow-hidden">
     {/* SVG top wave */}
     <div className="absolute top-0 left-0 w-full h-[100px] z-[1] pointer-events-none">
       <svg viewBox="0 0 1440 100" width="100%" height="100%">
