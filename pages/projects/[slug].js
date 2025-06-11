@@ -1,9 +1,9 @@
 // pages/projects/[slug].js
-
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WestWynCounty from "@/components/projects/WestWynCounty";
 
 const projects = [
   {
@@ -76,7 +76,7 @@ const projects = [
     slug: "westwyn-county",
     status: "Available",
     description:
-      "WestWyn County is a visionary plotted development located in the Activation Zone of Dholera SIR. This modern township integrates technology with sustainability and is ideal for futuristic investments.",
+      "WestWyn County is a visionary plotted development located in the Activation Zone of Dholera SIR...",
     highlights: [
       "Located in the Activation Zone",
       "Plot sizes from 100 to 500 sq. yd.",
@@ -103,6 +103,26 @@ export async function getStaticProps({ params }) {
 }
 
 export default function ProjectDetail({ project }) {
+  // Special case for WestWyn County
+  if (project.slug === "westwyn-county") {
+    return (
+      <>
+        <Head>
+          <title>WestWyn County – Premium Plots in Dholera</title>
+          <meta
+            name="description"
+            content="WestWyn County offers NA/NOC-approved plots in Dholera Smart City. Immediate possession, trusted developer, gated community with modern amenities."
+          />
+          <link
+            rel="canonical"
+            href="https://dholeragujarat.in/projects/westwyn-county"
+          />
+        </Head>
+        <WestWynCounty />
+      </>
+    );
+  }
+
   return (
     <>
       <Head>
@@ -112,10 +132,16 @@ export default function ProjectDetail({ project }) {
           rel="canonical"
           href={`https://dholeragujarat.in/projects/${project.slug}`}
         />
-        <meta property="og:title" content={`${project.name} - Dholera Project`} />
+        <meta
+          property="og:title"
+          content={`${project.name} - Dholera Project`}
+        />
         <meta property="og:description" content={project.description} />
         <meta property="og:image" content={project.image} />
-        <meta property="og:url" content={`https://dholeragujarat.in/projects/${project.slug}`} />
+        <meta
+          property="og:url"
+          content={`https://dholeragujarat.in/projects/${project.slug}`}
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
