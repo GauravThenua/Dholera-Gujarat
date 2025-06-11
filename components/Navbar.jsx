@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 // import { useUser } from '@/context/UserContext';  // Commented out since login is removed
 // import AuthModal from '@/components/AuthModal';
 
@@ -16,16 +16,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
-            <img
-              src="/images/dholera_gujarat_logo.png"
-              alt="Dholera Logo"
-              className="h-10 w-10 object-contain drop-shadow-lg"
-            />
-            <Link
-              href="/"
-              className="text-2xl font-extrabold text-white tracking-wide hover:text-[#ffd200] transition"
-            >
-              Dholera Gujarat
+            <Link href="/" className="flex items-center space-x-3">
+              <img
+                src="/images/dholera_gujarat_logo.png"
+                alt="Dholera Logo"
+                className="h-10 w-10 object-contain drop-shadow-lg"
+              />
+              <span className="text-2xl font-extrabold text-white tracking-wide hover:text-[#ffd200] transition">
+                Dholera Gujarat
+              </span>
             </Link>
           </div>
 
@@ -36,7 +35,8 @@ export default function Navbar() {
                 <X className="text-white h-7 w-7" />
               ) : (
                 <Menu className="text-white h-7 w-7" />
-              )} Menu
+              )}{" "}
+              Menu
             </button>
           </div>
 

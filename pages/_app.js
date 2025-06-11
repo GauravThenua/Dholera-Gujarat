@@ -19,6 +19,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="Dholera Smart City - Explore investment, projects and growth opportunities."
         />
+        <link rel="icon" href="/images/dholera_gujarat_logo.ico" />
       </Head>
       <Component {...pageProps} />
       <WhatsAppFloatingButton />

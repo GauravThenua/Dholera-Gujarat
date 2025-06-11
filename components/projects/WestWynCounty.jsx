@@ -5,6 +5,7 @@ import westwynBanner from "@/public/images/westwyn-banner.jpg";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import CostSheet from "../CostSheet";
+import WhatsAppFloatingButton from "../WhatsAppFloatingButton";
 
 export default function WestWynCounty() {
   return (
@@ -179,7 +180,8 @@ export default function WestWynCounty() {
             </h3>
             <address className="not-italic space-y-5 text-gray-700 max-w-3xl mx-auto text-base flex flex-col gap-3">
               <p>
-                <strong>🏢 Head Office:</strong> H-119 ,Sector-63, Noida, Uttar Pradesh
+                <strong>🏢 Head Office:</strong> H-119 ,Sector-63, Noida, Uttar
+                Pradesh
               </p>
               <p>
                 <strong>🏬 Corporate Office:</strong> JMD Megapolis, Gurugram,
@@ -197,15 +199,40 @@ export default function WestWynCounty() {
             <CostSheet />
           </section>
 
-          {/* Call to Action Button */}
-          <section className="md:col-span-2 text-center ">
-            <a
-              href="/contact"
-              className="inline-block bg-green-800 text-white text-xl font-semibold px-16 py-5 rounded-full shadow-lg hover:bg-green-900 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-green-400"
-              aria-label="Book Your Plot Now"
-            >
-              Book Your Plot Now
-            </a>
+          {/* Book Plot Now Section */}
+          <section className="md:col-span-2 text-center  px-4">
+            <div className="bg-gradient-to-br from-green-200 via-blue-300 to-green-100 rounded-2xl shadow-xl py-12 px-6 sm:px-10 max-w-3xl mx-auto">
+              {/* Heading */}
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-6">
+                Book Your Plot Now
+              </h2>
+
+              {/* Subtext */}
+              <p className="text-lg text-gray-600 mb-8 font-medium">
+                Prefer a quick chat? Reach out instantly.
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
+                {/* Call Button */}
+                <a
+                  href="tel:+919540561820"
+                  className="bg-white border border-green-700 text-green-800 font-semibold px-6 py-3 rounded-full hover:bg-green-100 transition duration-300 shadow-sm"
+                >
+                  📞 Call Us on +91 95405 61820
+                </a>
+
+                {/* WhatsApp Button */}
+                <a
+                  href="https://wa.me/919540561820"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300 shadow-sm"
+                >
+                  💬 WhatsApp Us
+                </a>
+              </div>
+            </div>
           </section>
         </article>
       </main>
