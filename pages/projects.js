@@ -116,49 +116,55 @@ export default function Projects() {
           <h1 className="text-4xl font-bold text-center mb-12">Our Projects</h1>
 
           <div className="mb-16 max-w-4xl mx-auto">
-  <h2 className="text-4xl font-extrabold mb-8 text-green-800 border-b-4 border-green-600 pb-2">
-    Live Project
-  </h2>
+            <h2 className="text-4xl font-extrabold mb-8 text-green-800 border-b-4 border-green-600 pb-2">
+              Live Project
+            </h2>
 
-  <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-    <div className="relative h-72 w-full sm:h-96">
-      <Image
-        src={liveProject.image}
-        alt={liveProject.name}
-        fill
-        sizes="(max-width: 768px) 100vw, 50vw"
-        className="object-cover"
-        priority
-      />
-      {/* Overlay with project status badge */}
-      <span className="absolute top-4 left-4 bg-green-700 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
-        {liveProject.status}
-      </span>
-    </div>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="relative h-72 w-full sm:h-96">
+                <Image
+                  src={liveProject.image}
+                  alt={liveProject.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
+                />
+                {/* Overlay with project status badge */}
+                <span className="absolute top-4 left-4 bg-green-700 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
+                  {liveProject.status}
+                </span>
+              </div>
 
-    <div className="p-8">
-      <h3 className="text-3xl font-semibold mb-3 text-green-900">{liveProject.name}</h3>
+              <div className="p-8">
+                <h3 className="text-3xl font-semibold mb-3 text-green-900">
+                  {liveProject.name}
+                </h3>
 
-      <p className="text-gray-700 mb-6 leading-relaxed">{liveProject.description}</p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  {liveProject.description}
+                </p>
 
-      <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
-        {liveProject.highlights.map((highlight, idx) => (
-          <li key={idx} className="hover:text-green-700 transition-colors cursor-default">
-            {highlight}
-          </li>
-        ))}
-      </ul>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
+                  {liveProject.highlights.map((highlight, idx) => (
+                    <li
+                      key={idx}
+                      className="hover:text-green-700 transition-colors cursor-default"
+                    >
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
 
-      <Link
-        href={`/projects/${liveProject.slug}`}
-        className="inline-block mt-8 bg-green-700 hover:bg-green-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition transform hover:-translate-y-1"
-      >
-        View Details
-      </Link>
-    </div>
-  </div>
-</div>
-
+                <Link
+                  href={`/projects/${liveProject.slug}`}
+                  className="inline-block mt-8 bg-green-700 hover:bg-green-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition transform hover:-translate-y-1"
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
+          </div>
 
           <h2 className="text-3xl font-semibold mb-6">All Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -177,7 +183,9 @@ export default function Projects() {
                   />
                 </div>
                 <div className="p-6">
-                  <h2 className="text-2xl font-semibold mb-2">{project.name}</h2>
+                  <h2 className="text-2xl font-semibold mb-2">
+                    {project.name}
+                  </h2>
                   <p className="text-sm text-gray-500 mb-4">{project.status}</p>
                   <p className="text-gray-700 mb-4">{project.description}</p>
                   <ul className="list-disc list-inside text-gray-700">

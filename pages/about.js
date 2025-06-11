@@ -22,23 +22,21 @@ export default function About() {
       <Navbar />
       <main className="min-h-screen bg-gradient-to-b from-indigo-100 via-purple-100 to-white text-gray-900">
         {/* Hero Section */}
-        <div className="relative w-full h-[400px]">
+        <div className="relative w-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
           <Image
             src="/images/dholera-banner.jpg"
             alt="Dholera Smart City Banner"
             fill
             className="object-cover"
             priority
-            // placeholder="blur"
-            // blurDataURL="/images/dholera-banner-blur.jpg"
           />
-          <div className="absolute inset-0 flex items-center justify-center text-center backdrop-blur bg-black/30 p-6 rounded-xl">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md">
+          <div className="absolute inset-0 flex items-center justify-center text-center backdrop-blur bg-black/30 px-4 py-10 sm:px-6 sm:py-12 rounded-xl">
+            <div className="max-w-4xl">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-md leading-tight">
                 Welcome to{" "}
                 <span className="text-[#ffd200]">DholeraGujarat.in</span>
               </h1>
-              <p className="text-lg md:text-xl text-gray-200 mt-4 max-w-3xl">
+              <p className="text-base sm:text-lg md:text-xl text-gray-200 mt-4 leading-relaxed">
                 Your trusted digital gateway to{" "}
                 <span className="font-semibold text-white">
                   Dholera Smart City

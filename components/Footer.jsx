@@ -120,7 +120,7 @@ const Footer = () => (
 
     {/* Divider and Copyright */}
     <div className="relative z-[2] mt-12 border-t border-white/20 pt-6 text-center text-white text-sm opacity-70">
-      &copy; {new Date().getFullYear()} Dholera. All rights reserved.
+      dholeragujara.in &copy; {new Date().getFullYear()} . All rights reserved.
     </div>
 
     {/* Font Awesome CDN */}

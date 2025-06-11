@@ -64,7 +64,7 @@ export default function WestWynCounty() {
                 title: "Project Highlights",
                 items: [
                   "📍 Location: Fedra–Pipli Highway, Prime Growth Corridor",
-                  "📏 Plot Sizes: 150–325 sq. yds.",
+                  "📏 Plot Sizes: 100–350 sq. yds.",
                   "🏠 Total Units: 130 exclusive plots",
                   "📜 Title Clear, NA/NOC Obtained, AUDA Approved",
                   "🔑 Possession: Immediate",
