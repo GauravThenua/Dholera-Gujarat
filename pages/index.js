@@ -11,6 +11,7 @@ import AuthModal from "@/components/AuthModal";
 import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
 import InvestorCompanies from "@/components/InvestorCompanies";
+import HeroSlider from "@/components/HeroSlider";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -35,6 +36,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar onLoginClick={() => setShowModal(true)} userName={userName} />
+      <HeroSlider />
 
       <MainSection />
       <HeroBanner />

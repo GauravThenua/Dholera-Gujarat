@@ -4,6 +4,8 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WestWynCounty from "@/components/projects/WestWynCounty";
+import OrchidTownship from "@/components/projects/OrchidTownship";
+import Paradise2 from "@/components/projects/Paradise2";
 
 const projects = [
   {
@@ -103,7 +105,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function ProjectDetail({ project }) {
-  // Special case for WestWyn County
+  // Render full custom page component based on slug
   if (project.slug === "westwyn-county") {
     return (
       <>
@@ -123,6 +125,39 @@ export default function ProjectDetail({ project }) {
     );
   }
 
+  if (project.slug === "orchid-township") {
+    return (
+      <>
+        <Head>
+          <title>Orchid Township – Premium Plots in Dholera</title>
+          <meta name="description" content={project.description} />
+          <link
+            rel="canonical"
+            href="https://dholeragujarat.in/projects/orchid-township"
+          />
+        </Head>
+        <OrchidTownship />
+      </>
+    );
+  }
+
+  if (project.slug === "paradise-2") {
+    return (
+      <>
+        <Head>
+          <title>Paradise 2 – Premium Plots in Dholera</title>
+          <meta name="description" content={project.description} />
+          <link
+            rel="canonical"
+            href="https://dholeragujarat.in/projects/paradise-2"
+          />
+        </Head>
+        <Paradise2 />
+      </>
+    );
+  }
+
+  // Default layout for other projects
   return (
     <>
       <Head>

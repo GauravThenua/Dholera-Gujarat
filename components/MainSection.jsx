@@ -29,7 +29,7 @@ const MainSection = () => {
   ];
 
   return (
-    <main className="relative bg-gradient-to-br from-[#d0f0f6] via-[#c5e2eb] to-[#a2e0db] py-10 px-6 overflow-hidden transition-colors duration-700 ease-in-out">
+    <main className="relative bg-gradient-to-br from-[#e1e3dbcc] via-[#d0d8c5] to-[#8e8f88] py-10 px-6 overflow-hidden transition-colors duration-700 ease-in-out">
       <div className="max-w-7xl mx-auto text-center">
         {/* Hero Heading */}
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 tracking-tight leading-tight transition-all duration-700 ease-in-out">

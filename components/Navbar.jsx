@@ -23,7 +23,7 @@ export default function Navbar() {
                 className="h-10 w-10 object-contain drop-shadow-lg"
               />
               <span className="text-2xl font-extrabold text-white tracking-wide hover:text-[#ffd200] transition">
-                Dholera Gujarat
+                DholeraGujarat
               </span>
             </Link>
           </div>

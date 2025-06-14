@@ -43,7 +43,7 @@ export default function HeroBanner() {
       {/* Hero Section */}
       <div className="relative h-[400px] flex items-center justify-center">
         <Image
-          src="/images/dholera-banner.jpg"
+          src="/images/slider/dholerabg.png"
           alt="Dholera Smart City Banner"
           fill
           priority
@@ -127,7 +127,7 @@ export default function HeroBanner() {
                   width={400}
                   height={256}
                   loading="lazy"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-fit"
                 />
               </div>
             ))}

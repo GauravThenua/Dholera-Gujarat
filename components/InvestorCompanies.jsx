@@ -193,10 +193,10 @@ const InvestorCompanies = () => {
           Get the Complete Investment Guide to Dholera
         </h2>
         <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-          Download the latest investor brochure with detailed company projects, locations, and investment plans.
+          Download the latest investment brochure with detailed projects, locations, and investment plans.
         </p>
         <a
-          href="/brochures/dholera-investment.pdf"
+          href="./brochure/dholera-investment.pdf"
           download
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
         >

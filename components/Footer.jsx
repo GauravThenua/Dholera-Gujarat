@@ -42,7 +42,7 @@ const Footer = () => (
         <h4 className="font-semibold text-xl mb-3 border-b border-white/30 pb-1">
           Quick Links
         </h4>
-        {["Home", "About", "Projects", "Contact"].map((text) => (
+        {["Home", "About", "Projects", "Contact","Blog","Gallery"].map((text) => (
           <a
             key={text}
             href={text === "Home" ? "/" : `/${text.toLowerCase()}`}
@@ -120,7 +120,7 @@ const Footer = () => (
 
     {/* Divider and Copyright */}
     <div className="relative z-[2] mt-12 border-t border-white/20 pt-6 text-center text-white text-sm opacity-70">
-      dholeragujara.in &copy; {new Date().getFullYear()} . All rights reserved.
+      dholeragujarat.in &copy; {new Date().getFullYear()} . All rights reserved.
     </div>
 
     {/* Font Awesome CDN */}

@@ -77,7 +77,7 @@ const projects = [
     slug: "westwyn-county",
     status: "Available",
     description:
-      "WestWyn County is a visionary plotted development that redefines investment in the heart of Dholera Smart City. Backed by BookMyAssets, it offers a perfect blend of smart urban planning, nature, and futuristic infrastructure.",
+      "WestWyn County is a visionary plotted development that redefines investment in the heart of Dholera Smart City. Backed by DholeraGujarat.in, it offers a perfect blend of smart urban planning, nature, and futuristic infrastructure.",
     highlights: [
       "Located in the Activation Zone",
       "Plot sizes from 100 to 500 sq. yd.",
